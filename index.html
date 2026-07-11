@@ -42,6 +42,8 @@
     padding:15px 28px;backdrop-filter:blur(10px);background:rgba(241,231,216,.8);border-bottom:1px solid rgba(44,33,26,.08)}
   .logo{font-weight:800;font-size:22px;letter-spacing:.03em;color:var(--espresso)}
   .logo span{background:linear-gradient(90deg,var(--terra),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .mark{width:34px;height:34px;flex:none}
   .navlinks{display:flex;gap:26px;font-size:14px;font-weight:600}
   .navlinks a{color:var(--clay);text-decoration:none}
   .navlinks a:hover{color:var(--terra-d)}
@@ -180,6 +182,8 @@
   .mentawai{background:linear-gradient(160deg,#efe3d1,#e6d5bd);border:1px solid rgba(169,85,47,.25);border-radius:18px;padding:24px 26px;margin-top:26px}
   .mentawai .h{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--terra-d);margin-bottom:8px}
   .mentawai p{color:var(--clay);font-size:15px}
+  .mentawai .tattoo-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+  .mentawai .tattoo-pair img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;box-shadow:0 10px 26px rgba(44,33,26,.2)}
 
   .cta{position:relative;text-align:center;background:radial-gradient(700px 400px at 50% 120%,rgba(221,161,94,.5),transparent 60%),linear-gradient(160deg,var(--terra),var(--clay))}
   .cta h2{font-size:clamp(30px,4vw,48px);max-width:16ch;margin:0 auto;color:#fbf3e8}
@@ -206,7 +210,26 @@
 <body>
 
 <nav>
-  <div class="logo">CELL<span>ORA</span></div>
+  <a href="#" class="brand" aria-label="Cellora">
+    <svg class="mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="cg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#c26a43"/><stop offset="1" stop-color="#dda15e"/>
+        </linearGradient>
+      </defs>
+      <g stroke="url(#cg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="32" cy="9" r="2.6" fill="url(#cg)" stroke="none"/>
+        <path d="M32 13 V53"/>
+        <path d="M32 23 C26 19 22 18 16 19"/>
+        <path d="M32 23 C38 19 42 18 48 19"/>
+        <path d="M32 50 C24 43 19 36 12 32"/>
+        <path d="M32 50 C40 43 45 36 52 32"/>
+        <circle cx="12" cy="32" r="1.7" fill="url(#cg)" stroke="none"/>
+        <circle cx="52" cy="32" r="1.7" fill="url(#cg)" stroke="none"/>
+      </g>
+    </svg>
+    <span class="logo">CELL<span>ORA</span></span>
+  </a>
   <div class="navlinks">
     <a href="#about">Über mich</a>
     <a href="#konzept">Das Konzept</a>
@@ -220,9 +243,9 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="kicker"><b></b>&nbsp;Zelle &middot; Körper &middot; Mindset &middot; Aura</div>
+      <div class="kicker"><b></b>&nbsp;Zelle &middot; Körper &middot; Mindset &middot; Seele</div>
       <h1>Gesundheit beginnt in der <span class="accent">Zelle</span> – und strahlt bis in deine <em>Aura</em>.</h1>
-      <p class="lead">Ganzheitlich. Messbar. Ehrlich. Ich begleite dich von der Zellebene über Fitness &amp; Ernährung bis zu Mindset und Ausstrahlung.</p>
+      <p class="lead">Ganzheitlich. Messbar. Ehrlich. Ich begleite dich von der Zellebene über Fitness &amp; Ernährung bis zu Mindset, Seele und innerer Balance.</p>
       <div class="cta-row">
         <a href="#about" class="btn">Meinen Weg entdecken →</a>
         <a href="#kontakt" class="btn btn-ghost">Lass uns sprechen</a>
@@ -259,7 +282,7 @@
 <section class="about" id="about">
   <div class="wrap about-grid">
     <div class="about-photo">
-      <img src="84F5885E-E9AD-4321-96B3-EBF0B5014D19_1_105_c.jpeg" alt="Verwurzelt in der Natur">
+      <img src="Schamane.png" alt="Mit einem Mentawai-Schamanen im Regenwald von Sumatra">
     </div>
     <div>
       <div class="eyebrow">Wer hinter Cellora steht</div>
@@ -297,10 +320,15 @@
 
       <div class="mentawai">
         <div class="h">Was mich geprägt hat · Mentawai, Sumatra</div>
-        <p>Das Foto links ist auf einer Reise nach Indonesien entstanden. Fast eine Woche habe ich beim Volk der Mentawai gelebt – auf den Inseln vor Sumatra, ursprünglich, so wie vor tausenden Jahren. Sie haben mir gezeigt, wie fit man sein kann, wenn man sich den ganzen Tag bewegt und nur natürliche Dinge isst. Kein 8-Stunden-Job – stattdessen morgens die Fragen: Wie war die Nacht? Was habe ich geträumt? Und wie nehme ich das mit in den Tag? Diese Erfahrung steckt heute in jedem Teil von Cellora.</p>
+        <p>Das Foto links zeigt mich mit einem der Schamanen. Fast eine Woche habe ich beim Volk der Mentawai gelebt – auf den Inseln vor Sumatra, ursprünglich, so wie vor tausenden Jahren. Sie haben mir gezeigt, wie fit man sein kann, wenn man sich den ganzen Tag bewegt und nur natürliche Dinge isst. Kein 8-Stunden-Job – stattdessen morgens die Fragen: Wie war die Nacht? Was habe ich geträumt? Und wie nehme ich das mit in den Tag?</p>
+        <p>Von dieser Reise trage ich ein Tattoo auf dem Rücken – bei den dortigen Schamanen steht es für <strong>Balance</strong>: zwischen Himmel und Erde, Licht und Schatten, gut und böse. Gestochen wurde es traditionell von Hand, mit Ruß und Asche und ganz ohne moderne Tätowiermaschine – so wie vor tausenden Jahren. Genau das halte ich für das Wichtigste hier auf diesem Planeten: dass man mit sich selbst und mit der Natur in Balance ist. Diese Haltung steckt heute in jedem Teil von Cellora.</p>
+        <div class="tattoo-pair">
+          <img src="Werkzeug.png" alt="Traditionelles Tätowieren von Hand mit Ruß und Asche">
+          <img src="FA8C2C46-67BF-40D0-8FAC-705A6D6FE19D_1_105_c.jpeg" alt="Das fertige Tattoo auf dem Rücken – Symbol für Balance">
+        </div>
       </div>
 
-      <p class="quote">„Starke Wurzeln zuerst – dann wächst alles andere von selbst."</p>
+      <p class="quote">„Für mich ist Gesundheit vor allem eins: Balance – mit dir selbst und mit der Natur. Und der Mut, wieder auf dein Herz zu hören."</p>
     </div>
   </div>
 </section>
@@ -338,12 +366,12 @@
   <div class="wrap">
     <div class="eyebrow">Das Cellora-Konzept</div>
     <h2 class="sec-title">Ein Weg in vier Ebenen – von innen nach außen.</h2>
-    <p class="sec-sub">Cellora verbindet <em>Cell</em> und <em>Aura</em>. Wir starten dort, wo Gesundheit messbar ist – und gehen den ganzen Weg bis zu deiner Ausstrahlung.</p>
+    <p class="sec-sub">Cellora verbindet <em>Cell</em> und <em>Aura</em>. Wir starten dort, wo Gesundheit messbar ist – und gehen den ganzen Weg bis zu deiner inneren Balance.</p>
     <div class="stages">
       <div class="stage"><div class="num">01</div><h3>Zelle</h3><p>Nährstoffe, Omega-3, D3/K2. Erst messen, dann gezielt versorgen. Das Fundament.</p></div>
       <div class="stage"><div class="num">02</div><h3>Körper</h3><p>Fitness, Bewegung, Ernährung. Aus gesunden Zellen wird echte Vitalität.</p></div>
       <div class="stage"><div class="num">03</div><h3>Mindset</h3><p>Gewohnheiten, Fokus, mentale Stärke. Der Übergang vom Körper ins Innere.</p></div>
-      <div class="stage"><div class="num">04</div><h3>Aura</h3><p>Seele, Energie, Ausstrahlung. Das Ergebnis, wenn die Ebenen darunter stimmen.</p></div>
+      <div class="stage"><div class="num">04</div><h3>Seele</h3><p>Balance mit dir selbst und mit der Natur. Energie, Ruhe und der Mut, auf dein Herz zu hören.</p></div>
     </div>
   </div>
 </section>
@@ -373,8 +401,8 @@
         <div class="photo"><img src="443DD8D4-19A3-4145-8EA6-D8B53B17A815_1_105_c.jpeg" alt="Mindset und Aura"></div>
         <div class="body">
           <span class="pill a">Ganzheitlich</span>
-          <h3>Mindset &amp; Aura</h3>
-          <p>Ganzheitliche Begleitung: Gewohnheiten, mentale Stärke und die Verbindung zu deiner Ausstrahlung.</p>
+          <h3>Mindset &amp; Seele</h3>
+          <p>Ganzheitliche Begleitung: mentale Stärke, innere Balance und die Verbindung zu dir selbst.</p>
         </div>
       </div>
     </div>
@@ -382,11 +410,11 @@
 </section>
 
 <section class="coaching">
-  <div class="bg"><img src="5DB90A4C-9193-4E1C-ADC1-434AC934EEE_1_105_c.jpeg" alt="Vortrag und Coaching"></div>
+  <div class="bg"><img src="5DB90A4C-9193-4E1C-ADC1-434ACD934EEE_1_105_c.jpeg" alt="Vortrag und Coaching"></div>
   <div class="wrap inner">
     <div class="eyebrow">Vorträge &amp; Coaching</div>
     <h2>Wissen, das bewegt – <em>persönlich weitergegeben.</em></h2>
-    <p>Ob im Vortrag, im Seminar oder in der 1:1-Begleitung: Ich mache komplexe Gesundheitsthemen greifbar und alltagstauglich – damit aus Wissen echte Veränderung wird.</p>
+    <p>Ob im Vortrag, im Seminar oder in der 1:1-Begleitung: Ich mache komplexe Gesundheitsthemen greifbar und alltagstauglich – damit aus Wissen echte Veränderung wird. Und damit du wieder mehr auf dein Herz hörst: körperlich wie seelisch, in Balance mit dir und der Natur.</p>
   </div>
 </section>
 
@@ -407,6 +435,7 @@
       <div class="wcard"><div class="ic">🦋</div><h3>Schilddrüsengesundheit</h3><p>Ganzheitlich betrachtet – für Balance, Energie und Stoffwechsel.</p><a data-webinar="Schilddrüsengesundheit ganzheitlich">Kostenlos anfordern →</a></div>
     </div>
     <p class="wmore">Und viele weitere Themen – von Augengesundheit über Schlaf bis Wechseljahre. <a data-wa="Hallo Richy, ich interessiere mich für eure Gesundheits-Fachvorträge. Welche Themen gibt es?" style="color:var(--terra-d);font-weight:700;text-decoration:none">Frag einfach nach →</a></p>
+    <p style="margin-top:24px"><a href="https://whatsapp.com/channel/0029VbAes4k6LwHohrCwvo1E" target="_blank" rel="noopener" class="btn">📢 Meinem WhatsApp-Kanal folgen</a></p>
   </div>
 </section>
 
@@ -423,7 +452,7 @@
     <div class="foot-grid">
       <div>
         <div class="logo">CELL<span>ORA</span></div>
-        <p class="imp"><a href="mailto:kontakt@cellora.de">kontakt@cellora.de</a></p>
+        <p class="imp"><a href="mailto:kontakt@cellora.de">kontakt@cellora.de</a><br><a href="https://whatsapp.com/channel/0029VbAes4k6LwHohrCwvo1E" target="_blank" rel="noopener">WhatsApp-Kanal abonnieren</a></p>
       </div>
       <div class="foot-links">
         <a href="#about">Über mich</a>
@@ -434,7 +463,6 @@
         <a href="datenschutz.html">Datenschutz</a>
       </div>
     </div>
-    <p class="note">Hinweis: Nahrungsergänzungsmittel dienen der allgemeinen Information und ersetzen keine medizinische Beratung. Bei gesundheitlichen Beschwerden wende dich bitte an einen Arzt.</p>
   </div>
 </footer>
 
