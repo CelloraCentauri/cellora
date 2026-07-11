@@ -195,6 +195,12 @@
   .partner{margin-top:20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .partner img{width:180px;height:auto;background:#fff;border-radius:10px;padding:9px 13px;box-shadow:0 6px 18px rgba(0,0,0,.28)}
   .partner span{font-size:12px;color:#a58d78;max-width:22ch;line-height:1.5}
+  .totop{position:fixed;right:22px;bottom:22px;z-index:60;width:48px;height:48px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:22px;font-weight:800;
+    background:linear-gradient(135deg,var(--terra),var(--amber));color:#2c211a;
+    box-shadow:0 10px 26px rgba(44,33,26,.35);opacity:0;pointer-events:none;transition:opacity .3s,transform .2s}
+  .totop.show{opacity:1;pointer-events:auto}
+  .totop:hover{transform:translateY(-3px)}
 </style>
 </head>
 <body>
@@ -218,7 +224,7 @@
       <h1>Gesundheit beginnt in der <span class="accent">Zelle</span> – und strahlt bis in deine <em>Aura</em>.</h1>
       <p class="lead">Ganzheitlich. Messbar. Ehrlich. Ich begleite dich von der Zellebene über Fitness &amp; Ernährung bis zu Mindset und Ausstrahlung.</p>
       <div class="cta-row">
-        <a href="#konzept" class="btn">Meinen Weg entdecken →</a>
+        <a href="#about" class="btn">Meinen Weg entdecken →</a>
         <a href="#kontakt" class="btn btn-ghost">Lass uns sprechen</a>
       </div>
     </div>
@@ -232,7 +238,7 @@
 <section class="pain">
   <div class="wrap">
     <div class="eyebrow">Kommt dir das bekannt vor?</div>
-    <h2 class="sec-title">Du tust „alles richtig" – und fühlst dich trotzdem nicht ganz.</h2>
+    <h2 class="sec-title">Du machst „alles richtig" – und fühlst dich trotzdem nicht ganz.</h2>
     <div class="pain-grid">
       <div class="pain-card"><p>Du bist aktiv und diszipliniert – aber irgendwann fehlt die Energie und du weißt nicht, warum.</p></div>
       <div class="pain-card"><p>Diäten, Trends, gute Vorsätze – nichts hält wirklich, weil der rote Faden fehlt.</p></div>
@@ -408,7 +414,7 @@
   <div class="wrap">
     <h2>Bereit für deinen Weg – von der Zelle bis zur Aura?</h2>
     <p>Ein ehrliches Gespräch. Kein Druck, kein Pitch. Du entscheidest danach völlig frei.</p>
-    <a data-wa="Hallo Richy, ich interessiere mich für ein persönliches Gespräch (1:1-Coaching)." class="btn btn-ghost" style="border-color:#fbf3e8;color:#fbf3e8">Lass uns sprechen →</a>
+    <a data-wa="Hallo Richy, ich interessiere mich für ein persönliches Gespräch." class="btn btn-ghost" style="border-color:#fbf3e8;color:#fbf3e8">Lass uns sprechen →</a>
   </div>
 </section>
 
@@ -417,11 +423,7 @@
     <div class="foot-grid">
       <div>
         <div class="logo">CELL<span>ORA</span></div>
-        <p class="imp">Cellora UG (haftungsbeschränkt) · Saarstr. 21 · 08056 Zwickau<br>Geschäftsführer: Richard Görner<br><a href="mailto:kontakt@cellora.de">kontakt@cellora.de</a></p>
-        <div class="partner">
-          <img src="eqology-partner.jpeg" alt="Eqology Independent Business Partner">
-          <span>Independent Business Partner der Firma Eqology</span>
-        </div>
+        <p class="imp"><a href="mailto:kontakt@cellora.de">kontakt@cellora.de</a></p>
       </div>
       <div class="foot-links">
         <a href="#about">Über mich</a>
@@ -432,9 +434,11 @@
         <a href="datenschutz.html">Datenschutz</a>
       </div>
     </div>
-    <p class="note">Richard Görner ist Independent Business Partner der Firma Eqology und handelt in eigener Verantwortung – kein Angestellter oder Vertreter von Eqology. Hinweis: Nahrungsergänzungsmittel dienen der allgemeinen Information und ersetzen keine medizinische Beratung. Bei gesundheitlichen Beschwerden wende dich bitte an einen Arzt.</p>
+    <p class="note">Hinweis: Nahrungsergänzungsmittel dienen der allgemeinen Information und ersetzen keine medizinische Beratung. Bei gesundheitlichen Beschwerden wende dich bitte an einen Arzt.</p>
   </div>
 </footer>
+
+<a href="#" class="totop" id="toTop" aria-label="Nach oben">↑</a>
 
 <script>
   /* ====== NUR DIESE ZEILE ANPASSEN ======
@@ -453,6 +457,16 @@
     var text = el.getAttribute('data-wa');
     el.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(text);
     el.target = '_blank'; el.rel = 'noopener';
+  });
+
+  /* Zurück-nach-oben-Button */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 400){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  });
+  toTop.addEventListener('click', function(e){
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 </script>
 
