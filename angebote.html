@@ -3,19 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kostenlose Vorträge &amp; Wissen – Cellora</title>
+<title>Angebote &amp; Preise – Cellora</title>
 <meta name="description" content="Cellora – ganzheitliche Gesundheit von der Zelle bis zur Seele. Zellgesundheit, Fitness &amp; Ernährung, Mindset und Balance mit dir und der Natur.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Cellora">
+<meta property="og:locale" content="de_DE">
 <meta property="og:title" content="Cellora – von der Zelle bis zur Aura">
 <meta property="og:description" content="Ganzheitliche Gesundheit von der Zelle bis zur Seele – messbar, ehrlich, in Balance mit dir und der Natur.">
+<meta property="og:url" content="https://cellora.de/">
 <meta property="og:image" content="https://cellora.de/og-image.jpg">
+<meta property="og:image:secure_url" content="https://cellora.de/og-image.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta name="twitter:image" content="https://cellora.de/og-image.jpg">
-<meta property="og:url" content="https://cellora.de/">
+<meta property="og:image:alt" content="Cellora – von der Zelle bis zur Aura">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cellora – von der Zelle bis zur Aura">
+<meta name="twitter:description" content="Ganzheitliche Gesundheit von der Zelle bis zur Seele – messbar, ehrlich, in Balance mit dir und der Natur.">
+<meta name="twitter:image" content="https://cellora.de/og-image.jpg">
 
 <!-- Platzhalter-Schrift (Jost, Univia-Pro-ähnlich). Zum Umstellen auf Univia Pro:
      Variante A – Adobe Fonts: <link rel="stylesheet" href="https://use.typekit.net/DEIN-KIT.css">
@@ -220,9 +226,22 @@
 </style>
 <style>
   .pagehead{background:var(--sand);padding-top:150px;padding-bottom:16px}
-  .pagehead h1{font-size:clamp(30px,4.4vw,46px);color:var(--espresso);max-width:24ch;margin-top:8px;line-height:1.12}
-  .pagehead p{color:var(--ink-soft);margin-top:16px;max-width:62ch}
-  .webinare{padding-top:44px}
+  .pagehead h1{font-size:clamp(30px,4.6vw,48px);color:var(--espresso);max-width:20ch;margin-top:10px;line-height:1.12}
+  .pagehead .lead{color:var(--ink-soft);margin-top:16px;max-width:64ch;font-size:19px}
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+  .price-grid.two{grid-template-columns:repeat(2,1fr);max-width:760px}
+  .price-card{background:var(--cream);border:1px solid rgba(44,33,26,.08);border-radius:20px;padding:28px;display:flex;flex-direction:column;box-shadow:0 10px 28px rgba(44,33,26,.07);position:relative}
+  .price-card.feat{border:2px solid var(--terra)}
+  .price-card .badge{position:absolute;top:-12px;left:28px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#fff;background:var(--terra);padding:5px 12px;border-radius:999px}
+  .price-card h3{font-size:21px;color:var(--espresso);margin-bottom:2px}
+  .price-card .price{font-size:34px;font-weight:800;color:var(--espresso);margin:8px 0 2px}
+  .price-card .price small{font-size:15px;font-weight:600;color:var(--ink-soft)}
+  .price-card .sub{font-size:13px;color:var(--ink-soft);margin-bottom:16px}
+  .price-card ul{list-style:none;margin:0 0 20px;padding:0;flex:1}
+  .price-card li{font-size:14px;color:var(--ink-soft);padding-left:24px;position:relative;margin-bottom:9px;line-height:1.5}
+  .price-card li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--terra);font-weight:800}
+  .price-note{margin-top:22px;font-size:14px;color:var(--ink-soft);max-width:70ch}
+  @media(max-width:860px){.price-grid,.price-grid.two{grid-template-columns:1fr;max-width:none}}
 </style>
 </head>
 <body>
@@ -261,28 +280,120 @@
 
 <section class="pagehead">
   <div class="wrap">
-    <div class="eyebrow">Kostenloses Wissen</div>
-    <h1>Über 50 Experten-Fachvorträge – <em>für dich kostenlos</em>.</h1>
-    <p>Rund um Gesundheit, Energie und Nährstoffe. Tipp ein Thema an – ich schicke dir den Zugang persönlich per WhatsApp. Kein Haken. &nbsp; <a href="index.html" style="color:var(--terra-d);font-weight:700;text-decoration:none">← Zurück zur Startseite</a></p>
+    <div class="eyebrow">Angebote</div>
+    <h1>So kann ich dich <em>unterstützen</em>.</h1>
+    <p class="lead">Alles beginnt mit einem kostenlosen und unverbindlichen Kennenlerngespräch. Danach findest du das Passende: von messbarer Zellgesundheit bis zum individuellen Trainingsplan. Online &amp; vor Ort (Zwickau &amp; Umgebung). &nbsp; <a href="index.html" style="color:var(--terra-d);font-weight:700;text-decoration:none">← Zurück zur Startseite</a></p>
   </div>
 </section>
 
-<section class="webinare" id="webinare">
+<section class="warum" style="padding-top:14px;padding-bottom:44px">
   <div class="wrap">
-    <span class="free-tag">🎁 Gratis · Keine Verpflichtung</span>
-    <div class="wgrid">
-      <div class="wcard"><div class="ic">🔬</div><h3>Zellgesundheit &amp; Omega-3</h3><p>Optimale Blutwerte als Basis für Energie und Regeneration.</p><a data-webinar="Zellgesundheit &amp; Omega-3 Blutwerte">Kostenlos anfordern →</a></div>
-      <div class="wcard"><div class="ic">🫀</div><h3>Herz &amp; Energie</h3><p>Mit Omega-3 und Q10 Herz, Kreislauf und Energie gezielt unterstützen.</p><a data-webinar="Herz und Energie mit Omega 3 &amp; Q10">Kostenlos anfordern →</a></div>
-      <div class="wcard"><div class="ic">⚡</div><h3>Mehr Energie</h3><p>Raus aus dem Dauertief – zurück zu echter Vitalität.</p><a data-webinar="Mehr Energie">Kostenlos anfordern →</a></div>
-      <div class="wcard"><div class="ic">🏋️</div><h3>Nährstoffe für Sportler</h3><p>Leistungsfördernde Nährstoffe für Training und Regeneration.</p><a data-webinar="Leistungsfördernde Nährstoffe für Sportler">Kostenlos anfordern →</a></div>
-      <div class="wcard"><div class="ic">💪</div><h3>Männergesundheit</h3><p>Was Männer wirklich brauchen – ehrlich und fundiert erklärt.</p><a data-webinar="Männergesundheit">Kostenlos anfordern →</a></div>
-      <div class="wcard"><div class="ic">✨</div><h3>Strahlende Haut</h3><p>Die 5 Regeln für gesunde, strahlende Haut – von innen heraus.</p><a data-webinar="Die 5 Regeln für strahlende und gesunde Haut">Kostenlos anfordern →</a></div>
-      <div class="wcard"><div class="ic">🦠</div><h3>Darmgesundheit</h3><p>Warum im Darm so vieles beginnt – und was ihn stärkt.</p><a data-webinar="Darmgesundheit">Kostenlos anfordern →</a></div>
-      <div class="wcard"><div class="ic">👨‍👩‍👦</div><h3>Nährstoffe für Kinder</h3><p>Starke Kids: Energie, Fokus und ein robustes Immunsystem.</p><a data-webinar="Kleine Helden, starke Nährstoffe – Nährstoffe für Kinder">Kostenlos anfordern →</a></div>
-      <div class="wcard"><div class="ic">🦋</div><h3>Schilddrüsengesundheit</h3><p>Ganzheitlich betrachtet – für Balance, Energie und Stoffwechsel.</p><a data-webinar="Schilddrüsengesundheit ganzheitlich">Kostenlos anfordern →</a></div>
+    <div class="box" style="text-align:center">
+      <div class="eyebrow" style="color:var(--terra-d)">Der erste Schritt · kostenlos</div>
+      <h2 style="font-size:clamp(24px,3.4vw,36px);color:var(--espresso);margin:6px auto 10px">Kennenlerngespräch · 15–20 Min.</h2>
+      <p style="max-width:58ch;margin:0 auto;color:var(--ink-soft);font-size:17px">Ein erstes Kennenlernen: Passen wir zusammen, sind wir uns sympathisch – und kann ich mir vorstellen, mit dir zu arbeiten? Mehr muss es noch nicht sein.</p>
+      <p style="margin-top:22px"><a data-wa="Hallo Richy, ich möchte gern ein kostenloses Kennenlerngespräch." class="btn">Kennenlerngespräch anfragen →</a></p>
     </div>
-    <p class="wmore">Und viele weitere Themen – von Augengesundheit über Schlaf bis Wechseljahre. <a data-wa="Hallo Richy, ich interessiere mich für eure Gesundheits-Fachvorträge. Welche Themen gibt es?" style="color:var(--terra-d);font-weight:700;text-decoration:none">Frag einfach nach →</a></p>
-    <p style="margin-top:24px"><a href="https://whatsapp.com/channel/0029VbAes4k6LwHohrCwvo1E" target="_blank" rel="noopener" class="btn">📢 Meinem WhatsApp-Kanal folgen</a></p>
+  </div>
+</section>
+
+<section class="konzept">
+  <div class="wrap">
+    <div class="eyebrow">Fundament</div>
+    <h2 class="sec-title">Zellgesundheit &amp; Nährstoffe.</h2>
+    <p class="sec-sub">Erst messen, dann handeln – testbasiert, kein Raten. Einzeln oder als Set buchbar.</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Bluttest Omega-3</h3>
+        <div class="price">75 €</div>
+        <div class="sub">einmalig · inkl. Beratung</div>
+        <ul>
+          <li>Persönliche Beratung</li>
+          <li>Ausführliche Auswertung deiner Werte</li>
+          <li>Konkrete Empfehlung für deine Versorgung</li>
+        </ul>
+        <a data-wa="Hallo Richy, ich interessiere mich für den Omega-3 Bluttest inkl. Auswertung." class="btn btn-ghost">Anfragen</a>
+      </div>
+      <div class="price-card">
+        <h3>Bluttest Vitamin K2 &amp; D3</h3>
+        <div class="price">75 €</div>
+        <div class="sub">einmalig · inkl. Beratung</div>
+        <ul>
+          <li>Persönliche Beratung</li>
+          <li>Ausführliche Auswertung deiner Werte</li>
+          <li>Konkrete Empfehlung für deine Versorgung</li>
+        </ul>
+        <a data-wa="Hallo Richy, ich interessiere mich für den Vitamin K2 und D3 Bluttest inkl. Auswertung." class="btn btn-ghost">Anfragen</a>
+      </div>
+      <div class="price-card feat">
+        <div class="badge">Spar-Set</div>
+        <h3>Kombi: beide Tests</h3>
+        <div class="price">135 €</div>
+        <div class="sub">einmalig · 15 € gespart</div>
+        <ul>
+          <li>Omega-3 <strong>und</strong> Vitamin K2 &amp; D3</li>
+          <li>Persönliche Beratung</li>
+          <li>Ausführliche Auswertung beider Tests</li>
+        </ul>
+        <a data-wa="Hallo Richy, ich interessiere mich für das Kombi-Set (Omega-3 und K2/D3 Bluttest, 135 €)." class="btn">Anfragen</a>
+      </div>
+    </div>
+    <p class="price-note">Nach dem Kennenlerngespräch bekommst du außerdem Zugang zu kostenlosen Live- und Online-Vorträgen. <a href="wissen.html" style="color:var(--terra-d);font-weight:700;text-decoration:none">Zu den Vorträgen →</a></p>
+  </div>
+</section>
+
+<section class="angebote">
+  <div class="wrap">
+    <div class="eyebrow">Aufbau</div>
+    <h2 class="sec-title">Fitness-Coaching mit Plan &amp; App.</h2>
+    <p class="sec-sub">Ein auf dich abgestimmter Trainingsplan über deine eigene App – mit so viel oder so wenig Betreuung, wie du möchtest. Jedes Paket startet mit einem persönlichen Anamnese-Gespräch.</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Basis</h3>
+        <div class="price">50 €<small> / Monat</small></div>
+        <div class="sub">Für alle, die einfach einen Plan wollen.</div>
+        <ul>
+          <li>Ein auf deine Ziele abgestimmter Trainingsplan</li>
+          <li>Zugang zu deiner App</li>
+          <li>Laufende Anpassung des Plans</li>
+          <li>Optional: 30-Min-Call für 60 €</li>
+        </ul>
+        <a data-wa="Hallo Richy, ich interessiere mich für das Fitness-Coaching Basis (Plan + App)." class="btn btn-ghost">Anfragen</a>
+      </div>
+      <div class="price-card feat">
+        <div class="badge">Beliebt</div>
+        <h3>Plus</h3>
+        <div class="price">95 €<small> / Monat</small><sup style="color:var(--terra-d);font-weight:700;font-size:16px">*</sup></div>
+        <div class="sub">Plan plus persönliche Betreuung.</div>
+        <ul>
+          <li>Alles aus <strong>Basis</strong></li>
+          <li>1× 30-Min-Call/Zoom pro Monat</li>
+          <li>Persönliches Feedback &amp; Feinjustierung</li>
+        </ul>
+        <a data-wa="Hallo Richy, ich interessiere mich für das Fitness-Coaching Plus (Plan + App + Betreuung)." class="btn">Anfragen</a>
+      </div>
+      <div class="price-card">
+        <h3>Premium</h3>
+        <div class="price">185 €<small> / Monat</small><sup style="color:var(--terra-d);font-weight:700;font-size:16px">*</sup></div>
+        <div class="sub">Mit Personal Training &amp; Anamnese-Gespräch.</div>
+        <ul>
+          <li>Trainingsplan + App</li>
+          <li>1 h Personal Training pro Monat</li>
+          <li>Bei mir oder bei dir (vor Ort)</li>
+          <li>Persönliches Anamnese-Gespräch inklusive</li>
+        </ul>
+        <a data-wa="Hallo Richy, ich interessiere mich für das Fitness-Coaching Premium (mit Personal Training)." class="btn btn-ghost">Anfragen</a>
+      </div>
+    </div>
+    <p class="price-note">Bei <strong>Basis &amp; Plus</strong> fällt für das Onboarding- und Anamnese-Gespräch im ersten Monat einmalig 100 € an – bei <strong>Premium</strong> ist es inklusive. Alle Preise inkl. App.<br><strong>*</strong> Bei Vorauszahlung von 6 Monaten 10 % Rabatt auf Plus &amp; Premium.</p>
+  </div>
+</section>
+
+<section class="cta" id="kontakt">
+  <div class="wrap">
+    <h2>Noch unsicher, was zu dir passt?</h2>
+    <p>Kein Problem – das klären wir im kostenlosen Kennenlerngespräch. Ehrlich, ohne Druck.</p>
+    <a data-wa="Hallo Richy, ich möchte gern ein kostenloses Kennenlerngespräch zu deinen Angeboten." class="btn btn-ghost" style="border-color:#fbf3e8;color:#fbf3e8">Kennenlerngespräch anfragen →</a>
   </div>
 </section>
 
