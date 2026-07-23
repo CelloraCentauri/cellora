@@ -49,8 +49,8 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:var(--font);color:var(--ink);background:var(--sand);line-height:1.65;-webkit-font-smoothing:antialiased}
-  h1,h2,h3{line-height:1.14;font-weight:800;letter-spacing:-.01em}
+  body{font-family:var(--font);color:var(--ink);background:var(--sand);line-height:1.65;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+  h1,h2,h3{line-height:1.14;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
   em{color:var(--terra-d);font-style:italic}
   img{display:block;max-width:100%}
   .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
@@ -292,7 +292,7 @@
       <div class="eyebrow" style="color:var(--terra-d)">Der erste Schritt · kostenlos</div>
       <h2 style="font-size:clamp(24px,3.4vw,36px);color:var(--espresso);margin:6px auto 10px">Kennenlerngespräch · 15–20 Min.</h2>
       <p style="max-width:58ch;margin:0 auto;color:var(--ink-soft);font-size:17px">Ein erstes Kennenlernen: Passen wir zusammen, sind wir uns sympathisch – und kann ich mir vorstellen, mit dir zu arbeiten? Mehr muss es noch nicht sein.</p>
-      <p style="margin-top:22px"><a data-wa="Hallo Richy, ich möchte gern ein kostenloses Kennenlerngespräch." class="btn">Kennenlerngespräch anfragen →</a></p>
+      <p style="margin-top:22px;text-align:center"><a data-wa="Hallo Richy, ich möchte gern ein kostenloses Kennenlerngespräch." class="btn">Kennenlerngespräch anfragen →</a></p>
     </div>
   </div>
 </section>
@@ -345,8 +345,9 @@
 <section class="angebote">
   <div class="wrap">
     <div class="eyebrow">Aufbau</div>
-    <h2 class="sec-title">Fitness-Coaching mit Plan &amp; App.</h2>
-    <p class="sec-sub">Ein auf dich abgestimmter Trainingsplan über deine eigene App – mit so viel oder so wenig Betreuung, wie du möchtest. Jedes Paket startet mit einem persönlichen Anamnese-Gespräch.</p>
+    <h2 class="sec-title" style="max-width:none">Fitness-Coaching mit Plan &amp; App.</h2>
+    <p class="sec-sub" style="max-width:none">Ein auf dich abgestimmter Trainingsplan über deine eigene App – mit so viel oder so wenig Betreuung, wie du möchtest.</p>
+    <p style="margin-top:18px;font-size:16px;color:var(--espresso)"><strong>Jedes Fitness-Coaching startet mit einem persönlichen Anamnese-Gespräch.</strong> Bei Basis &amp; Plus einmalig 100 € im ersten Monat – bei Premium inklusive.</p>
     <div class="price-grid">
       <div class="price-card">
         <h3>Basis</h3>
@@ -364,9 +365,11 @@
         <div class="badge">Beliebt</div>
         <h3>Plus</h3>
         <div class="price">95 €<small> / Monat</small><sup style="color:var(--terra-d);font-weight:700;font-size:16px">*</sup></div>
-        <div class="sub">Plan plus persönliche Betreuung.</div>
+        <div class="sub">Alles aus Basis – plus persönliche Betreuung.</div>
         <ul>
-          <li>Alles aus <strong>Basis</strong></li>
+          <li>Ein auf deine Ziele abgestimmter Trainingsplan</li>
+          <li>Zugang zu deiner App</li>
+          <li>Laufende Anpassung des Plans</li>
           <li>1× 30-Min-Call/Zoom pro Monat</li>
           <li>Persönliches Feedback &amp; Feinjustierung</li>
         </ul>
@@ -375,24 +378,26 @@
       <div class="price-card">
         <h3>Premium</h3>
         <div class="price">185 €<small> / Monat</small><sup style="color:var(--terra-d);font-weight:700;font-size:16px">*</sup></div>
-        <div class="sub">Mit Personal Training &amp; Anamnese-Gespräch.</div>
+        <div class="sub">Alles aus Plus – plus Personal Training.</div>
         <ul>
-          <li>Trainingsplan + App</li>
-          <li>1 h Personal Training pro Monat</li>
-          <li>Bei mir oder bei dir (vor Ort)</li>
-          <li>Persönliches Anamnese-Gespräch inklusive</li>
+          <li>Ein auf deine Ziele abgestimmter Trainingsplan</li>
+          <li>Zugang zu deiner App</li>
+          <li>Laufende Anpassung des Plans</li>
+          <li>1× 30-Min-Call/Zoom pro Monat</li>
+          <li>Persönliches Feedback &amp; Feinjustierung</li>
+          <li>1 h Personal Training pro Monat (bei mir oder bei dir)</li>
         </ul>
         <a data-wa="Hallo Richy, ich interessiere mich für das Fitness-Coaching Premium (mit Personal Training)." class="btn btn-ghost">Anfragen</a>
       </div>
     </div>
-    <p class="price-note">Bei <strong>Basis &amp; Plus</strong> fällt für das Onboarding- und Anamnese-Gespräch im ersten Monat einmalig 100 € an – bei <strong>Premium</strong> ist es inklusive. Alle Preise inkl. App.<br><strong>*</strong> Bei Vorauszahlung von 6 Monaten 10 % Rabatt auf Plus &amp; Premium.</p>
+    <p class="price-note">Alle Preise inkl. App.<br><strong>*</strong> Bei Vorauszahlung von 6 Monaten 10 % Rabatt auf Plus &amp; Premium.</p>
   </div>
 </section>
 
 <section class="cta" id="kontakt">
   <div class="wrap">
-    <h2>Noch unsicher, was zu dir passt?</h2>
-    <p>Kein Problem – das klären wir im kostenlosen Kennenlerngespräch. Ehrlich, ohne Druck.</p>
+    <h2>Noch unsicher,<br>was zu dir passt?</h2>
+    <p>Kein Problem – das klären wir im kostenlosen Kennenlerngespräch. Ganz ohne Druck.</p>
     <a data-wa="Hallo Richy, ich möchte gern ein kostenloses Kennenlerngespräch zu deinen Angeboten." class="btn btn-ghost" style="border-color:#fbf3e8;color:#fbf3e8">Kennenlerngespräch anfragen →</a>
   </div>
 </section>
