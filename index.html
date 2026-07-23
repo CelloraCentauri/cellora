@@ -223,6 +223,19 @@
     box-shadow:0 10px 26px rgba(44,33,26,.35);opacity:0;pointer-events:none;transition:opacity .3s,transform .2s}
   .totop.show{opacity:1;pointer-events:auto}
   .totop:hover{transform:translateY(-3px)}
+  .fit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+  .fit-card{background:var(--cream);border:1px solid rgba(44,33,26,.08);border-radius:16px;padding:20px 22px 20px 52px;position:relative;color:var(--ink-soft);font-size:16px;box-shadow:0 8px 22px rgba(44,33,26,.05)}
+  .fit-card::before{content:"✓";position:absolute;left:20px;top:19px;color:var(--terra);font-weight:800;font-size:18px}
+  .fit-card.span2{grid-column:1 / -1}
+  @media(max-width:760px){.fit-grid{grid-template-columns:1fr}}
+  .weg{background:var(--sand2)}
+  .weg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+  .weg-step{background:var(--cream);border:1px solid rgba(44,33,26,.08);border-radius:18px;padding:26px 22px;box-shadow:0 8px 22px rgba(44,33,26,.05)}
+  .weg-step .wn{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--terra),var(--amber));color:#2c211a;font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .weg-step h3{font-size:18px;color:var(--espresso);margin-bottom:6px}
+  .weg-step p{font-size:14px;color:var(--ink-soft);line-height:1.5}
+  @media(max-width:860px){.weg-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.weg-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -264,10 +277,10 @@
     <div>
       <div class="kicker"><b></b>&nbsp;Zelle &middot; Körper &middot; Mindset &middot; Seele</div>
       <h1>Gesundheit beginnt in der <span class="accent">Zelle</span> – und strahlt bis in deine <em>Aura</em>.</h1>
-      <p class="lead">Ganzheitlich. Messbar. Ehrlich. Ich begleite dich von der Zellebene über Fitness &amp; Ernährung bis zu Mindset, Seele und innerer Balance.</p>
+      <p class="lead">Für Menschen, die gesünder, fitter und ausgeglichener werden wollen – <strong>messbar und ohne Rätselraten</strong>. Ich begleite dich vom Bluttest über den Trainingsplan bis zu innerer Balance. Online &amp; vor Ort.</p>
       <div class="cta-row">
-        <a href="#about" class="btn">Meinen Weg entdecken →</a>
-        <a href="#kontakt" class="btn btn-ghost">Lass uns sprechen</a>
+        <a data-wa="Hallo Richy, ich möchte gern ein kostenloses Kennenlerngespräch." class="btn">Kostenloses Kennenlerngespräch →</a>
+        <a href="#weg" class="btn btn-ghost">So läuft es ab</a>
       </div>
     </div>
     <div class="hero-photo">
@@ -279,12 +292,14 @@
 
 <section class="pain">
   <div class="wrap">
-    <div class="eyebrow">Kommt dir das bekannt vor?</div>
-    <h2 class="sec-title">Du machst „alles richtig" – und fühlst dich trotzdem nicht ganz.</h2>
-    <div class="pain-grid">
-      <div class="pain-card"><p>Du bist aktiv und diszipliniert – aber irgendwann fehlt die Energie und du weißt nicht, warum.</p></div>
-      <div class="pain-card"><p>Diäten, Trends, gute Vorsätze – nichts hält wirklich, weil der rote Faden fehlt.</p></div>
-      <div class="pain-card"><p>Du spürst: Gesundheit ist mehr als dein Körper. Aber wie verbindest du das Messbare mit dem Spürbaren?</p></div>
+    <div class="eyebrow">Hier bist du richtig, wenn …</div>
+    <h2 class="sec-title">… du gesünder werden willst – ohne Rätselraten.</h2>
+    <div class="fit-grid">
+      <div class="fit-card">… du endlich wissen willst, ob deine Nährstoffe stimmen – statt weiter zu raten.</div>
+      <div class="fit-card">… du schon vieles probiert hast, aber nichts wirklich hält.</div>
+      <div class="fit-card">… du mit 40+ wieder fit und energiegeladen werden willst – ohne dich kaputtzumachen.</div>
+      <div class="fit-card">… du einen klaren Plan willst, der zu deinem Alltag passt.</div>
+      <div class="fit-card span2">… du Gesundheit ganzheitlich angehen willst: Körper, Kopf und innere Balance.</div>
     </div>
   </div>
 </section>
@@ -395,6 +410,21 @@
   </div>
 </section>
 
+<section class="weg" id="weg">
+  <div class="wrap">
+    <div class="eyebrow">So läuft es ab</div>
+    <h2 class="sec-title">Dein Weg mit Cellora – in vier Schritten.</h2>
+    <p class="sec-sub">Kein Rätselraten, kein Blindflug. Du weißt von Anfang an, was dich erwartet.</p>
+    <div class="weg-grid">
+      <div class="weg-step"><div class="wn">1</div><h3>Kennenlernen</h3><p>Kostenloses Gespräch: Passen wir zusammen – und wie kann ich dir am besten helfen?</p></div>
+      <div class="weg-step"><div class="wn">2</div><h3>Messen</h3><p>Fakten statt Vermutungen – z. B. deine Omega-3- und D3/K2-Werte per Bluttest.</p></div>
+      <div class="weg-step"><div class="wn">3</div><h3>Verstehen &amp; Planen</h3><p>Ausführliche Auswertung und ein Plan, der wirklich zu dir und deinem Alltag passt.</p></div>
+      <div class="weg-step"><div class="wn">4</div><h3>Begleitet umsetzen</h3><p>Über deine App und persönliche Betreuung – Schritt für Schritt, dranbleiben inklusive.</p></div>
+    </div>
+    <p style="margin-top:36px;text-align:center"><a data-wa="Hallo Richy, ich möchte gern ein kostenloses Kennenlerngespräch." class="btn">Los geht's – kostenloses Kennenlerngespräch →</a></p>
+  </div>
+</section>
+
 <section class="angebote" id="angebote">
   <div class="wrap">
     <div class="eyebrow">Meine Angebote</div>
@@ -449,9 +479,9 @@
 
 <section class="cta" id="kontakt">
   <div class="wrap">
-    <h2>Bereit für deinen Weg – von der Zelle bis zur Aura?</h2>
-    <p>Ein ehrliches Gespräch. Kein Druck. Du entscheidest danach völlig frei.</p>
-    <a data-wa="Hallo Richy, ich interessiere mich für ein persönliches Gespräch." class="btn btn-ghost" style="border-color:#fbf3e8;color:#fbf3e8">Lass uns sprechen →</a>
+    <h2>Starte mit einem kostenlosen Kennenlerngespräch.</h2>
+    <p>Im Gespräch finden wir gemeinsam heraus, wie ich dir am besten helfen kann. Unverbindlich, ohne Druck.</p>
+    <a data-wa="Hallo Richy, ich möchte gern ein kostenloses Kennenlerngespräch." class="btn btn-ghost" style="border-color:#fbf3e8;color:#fbf3e8">Kennenlerngespräch anfragen →</a>
   </div>
 </section>
 
